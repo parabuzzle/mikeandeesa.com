@@ -1,0 +1,19 @@
+---
+layout: page
+title: "Categories"
+permalink: /categories/
+---
+
+{% for category in site.categories %}
+	{% capture cat %}{{ category | first }}{% endcapture %}
+	{% if site.descriptions[cat] %}
+		<a href="/category/{{cat}}"><h2 id="{{cat}}">{{ site.descriptions[cat].title}}</h2></a>
+		<p class="desc"><em>{{ site.descriptions[cat].desc }}</em></p>
+	{% else %}
+		<a href="/category/{{cat}}"><h2 id="{{cat}}">{{ cat | capitalize }}</h2></a>
+	{% endif %}
+	{% assign postcount = site.categories[cat] | size %}
+	<small>{{postcount}} post{% if postcount > 1 %}s{% endif %} in this category</small>
+  {% if forloop.last == false %}<hr>{% endif %}
+{% endfor %}
+<br>
