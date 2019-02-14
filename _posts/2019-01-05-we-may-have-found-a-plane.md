@@ -4,7 +4,6 @@ title:  "We may have found a plane!"
 date:   2019-01-05 12:00:00
 author: Mike Heijmans
 categories: aircraft-ownership
-#cover:  "/assets/debs.jpg"
 ---
 
 We've been passively looking at planes for a few months now and we've made offers on a few that didn't pan out. Yesterday a plane found us! A local seller has a beautiful classic plane that perfectly fits our mission and has the right upgrades. 

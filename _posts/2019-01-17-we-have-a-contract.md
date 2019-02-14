@@ -19,13 +19,13 @@ We agree to pay the seller some amount for the plane contingent on a pre-buy ins
 
 So if the pre-buy uncovers something that we can't reconcile, I'm out the price of hiring the shop to do the inspection but that's it. It's a lot better to spend $1k now on a good pre-buy than to discover you need to spend $10K to get it airworthy at your first annual!
 
-## Acceptence
+## Acceptance
 
-Once we sign the acceptence, we are committed to buying the plane. At this point, our deposit is no longer refundable. If we walk away now, say goodbye to that money. In the acceptence, you lay out any repairs that you and the seller have agreed on or any reduction in price. You put that in writing and "accept" the plane with these additional terms.
+Once we sign the acceptance, we are committed to buying the plane. At this point, our deposit is no longer refundable. If we walk away now, say goodbye to that money. In the acceptance, you lay out any repairs that you and the seller have agreed on or any reduction in price. You put that in writing and "accept" the plane with these additional terms.
 
 ## Delivery
 
-Once everything is done, we will sign the delivery reciept which basically means we are taking the keys and the money in escrow goes to the seller. Also the registration is transferred and you now own a freaking plane!
+Once everything is done, we will sign the delivery receipt which basically means we are taking the keys and the money in escrow goes to the seller. Also the registration is transferred and you now own a freaking plane!
 
 ## So What's next?
 
