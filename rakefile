@@ -3,15 +3,38 @@ require "tmpdir"
 
 require "bundler/setup"
 require "jekyll"
+require('image_optimizer')
 
 
 # Change your GitHub reponame
 GITHUB_REPONAME = "parabuzzle/mikeandeesa.com"
 
+namespace :assets do 
+
+  desc "optimize assets"
+  task :optimize do
+
+    puts "Optimizing Images"
+
+    jpgs = Dir.glob('assets/**/*.jpg')
+    pngs = Dir.glob('assets/**/*.png')
+
+    jpgs.each do |img|
+      ImageOptimizer.new(img).optimize
+    end
+
+    pngs.each do |img|
+      ImageOptimizer.new(img).optimize
+    end
+
+    puts "Images optimizied!"
+  end
+
+end
 
 namespace :site do
   desc "Generate blog files"
-  task :generate do
+  task :generate => ['assets:optimize'] do
     Jekyll::Site.new(Jekyll.configuration({
       "source"      => ".",
       "destination" => "_site"
