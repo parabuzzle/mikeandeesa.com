@@ -87,30 +87,30 @@ social:
   - name: YouTube
     icon: youtube
     username: YouTube
-    url: https://youtube.com/mikeandeesa
+    url: https://www.youtube.com/channel/UC43jDYZ4mr538RW3eRSF42A
     desc: Subscribe on YouTube
     share: true
 
   - name: Instagram
     icon: instagram
     username: Instagram
-    url: https://instagram.com/mikeandeesa
+    url: https://instagram.com/parabuzzle
     desc: Follow us on Instagram
     share: true
 
-  - name: Vimeo
-    icon: vimeo-square
-    username:
-    url:
-    desc: Follow me on Vimeo
-    share: false
-
-  - name: Reddit
-    icon: reddit
-    username:
-    url:
-    desc: Share to Reddit
-    share: true
+  # - name: Vimeo
+  #   icon: vimeo-square
+  #   username:
+  #   url:
+  #   desc: Follow me on Vimeo
+  #   share: false
+  
+  # - name: Reddit
+  #   icon: reddit
+  #   username:
+  #   url:
+  #   desc: Share to Reddit
+  #   share: true
 
 # Social sharing protocols
 # These are for automatically generating sharing metadata for FB and Twitter
