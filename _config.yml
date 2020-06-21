@@ -98,6 +98,13 @@ social:
     desc: Follow Me on Instagram
     share: true
 
+  - name: Twitter
+    icon: twitter
+    username: Twitter
+    url: https://twitter.com/parabuzzle
+    desc: Follow us on Twitter
+    share: true
+
   - name: FlightAware
     icon: plane
     username: FlightAware
