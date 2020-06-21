@@ -193,16 +193,25 @@ pre code.hljs {
   li.nav-link {
   	a {
 	    display: inline-block;
-	    @include media ($tablet) {
-	      padding-right: 1.5em;
-	    }
 	  }
 	  &:last-child a {
 	  	@include media ($tablet) {
     		padding-right: 1em;
     	}
     }
-  }
+	}
+	li.nav-link.tight {
+		@include media ($tablet) {
+			padding-right: 0em;
+		}
+		padding-right: 0px;
+		padding: 0px;
+	}
+	li.nav-link.wide {
+		@include media ($tablet) {
+			padding-right: 1.5em;
+		}
+	}
 }
 
 /*

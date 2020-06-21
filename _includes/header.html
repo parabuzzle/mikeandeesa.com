@@ -12,8 +12,17 @@
     </a>
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show">
-        <li class="nav-link"><a href="/about">About</a>
-				<li class="nav-link"><a href="/categories">Categories</a>
+        <li class="nav-link wide"><a href="/about">About</a>
+				<li class="nav-link wide"><a href="/categories">Categories</a>
+				{% for social in site.social %}
+          {% if social.url != null %}
+          <li class="nav-link tight">
+            <a href="{{ social.url }}" title="{{ social.desc }}">
+              <i class="fa fa-{{ social.icon }}"></i>
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
       </ul>
     </nav>
   </div>
