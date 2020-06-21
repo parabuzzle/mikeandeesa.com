@@ -95,22 +95,15 @@ social:
     icon: instagram
     username: Instagram
     url: https://instagram.com/parabuzzle
-    desc: Follow us on Instagram
+    desc: Follow Me on Instagram
     share: true
 
-  # - name: Vimeo
-  #   icon: vimeo-square
-  #   username:
-  #   url:
-  #   desc: Follow me on Vimeo
-  #   share: false
-  
-  # - name: Reddit
-  #   icon: reddit
-  #   username:
-  #   url:
-  #   desc: Share to Reddit
-  #   share: true
+  - name: FlightAware
+    icon: plane
+    username: FlightAware
+    url: http://n5451u.com
+    desc: "Follow our Flights"
+    share: true
 
 # Social sharing protocols
 # These are for automatically generating sharing metadata for FB and Twitter
