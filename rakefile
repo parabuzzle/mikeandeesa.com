@@ -1,5 +1,6 @@
 require "rubygems"
 require "tmpdir"
+require 'yaml'
 
 require "bundler/setup"
 require "jekyll"
@@ -16,16 +17,33 @@ namespace :assets do
 
     puts "Optimizing Images"
 
-    jpgs = Dir.glob('assets/**/*.jpg')
-    pngs = Dir.glob('assets/**/*.png')
+    cachefile = './cache.yml'
+    if File.exist?(cachefile)
+      cache = YAML.load(File.read(cachefile))
+      puts "cache file found..."
+      puts "skipping #{cache[:jpgs].count} already processed jpgs"
+      puts "skipping #{cache[:pngs].count} already processed pngs"
+    else
+      cache = {jpgs: [], pngs: []}
+    end
+
+    all_jpgs = Dir.glob('assets/**/*.jpg')
+    all_pngs = Dir.glob('assets/**/*.png')
+
+    jpgs = all_jpgs - cache[:jpgs]
+    pngs = all_pngs - cache[:pngs]
 
     jpgs.each do |img|
       ImageOptimizer.new(img).optimize
+      cache[:jpgs] << img
     end
 
     pngs.each do |img|
       ImageOptimizer.new(img).optimize
+      cache[:pngs] << img
     end
+
+    File.open(cachefile, "w") { |file| file.write(cache.to_yaml) }
 
     puts "Images optimizied!"
   end
@@ -34,7 +52,7 @@ end
 
 namespace :site do
   desc "Generate blog files"
-  task :generate => [] do
+  task :generate => ['assets:optimize'] do
     Jekyll::Site.new(Jekyll.configuration({
       "source"      => ".",
       "destination" => "_site"
