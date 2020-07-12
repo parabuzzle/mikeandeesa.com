@@ -111,6 +111,13 @@ social:
     url: http://n5451u.com
     desc: "Follow our Flights"
     share: true
+  
+  - name: Merch
+    icon: shopping-basket
+    username: Merch
+    url: https://teespring.com/stores/mike-and-eesas-store
+    desc: Purchase some Merch
+    share: true
 
 # Social sharing protocols
 # These are for automatically generating sharing metadata for FB and Twitter
