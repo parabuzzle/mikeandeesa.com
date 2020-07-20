@@ -59,6 +59,14 @@ descriptions:
   aircraft-ownership:
     title: "Aircraft Ownership"
     desc: "Posts related to all the fun associated with owning your own airplane"
+  
+  acro:
+    title: "Aerobatics"
+    desc: "Posts about flying aerobatics"
+    
+  build-log:
+    title: "Build Log"
+    desc: "Posts about building airplanes"
 
   geekout:
     title: "Geeking Out"
