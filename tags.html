@@ -1,0 +1,8 @@
+
+{% for t in site.tags %}
+	<a href="/tag/{{t[0]}}"><h2 id="{{t[0]}}">{{ t[0] | capitalize }}</h2></a>
+	{{site.tags[t].size}} posts tagged with {{t[0]}}
+  {% if forloop.last == false %}<hr>{% endif %}
+{% endfor %}
+
+<br>
