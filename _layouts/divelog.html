@@ -30,9 +30,68 @@ layout: default
 </section>
 
 <article class="post-content">
-  {{ content }}
+	<div class="card" style="margin-bottom: 2em;">
+		<div class="card-body">
+			<h3 class="card-title">Dive Stats</h3>
+			<p class="card-text">
+				<div class="row">
+
+					<div class="col-sm">
+						<div>
+							<b>Depth:</b> {{page.divelog.depth}}ft
+						</div>
+						<div>
+							<b>Bottom Time:</b> {{page.divelog.bottom_time}} mins
+						</div>
+						<div>
+							<b>Gas:</b> {{page.divelog.gas}}
+						</div>
+					</div>
+					<div class="col-sm">
+						<div>
+							<b>Visibility:</b> {{page.divelog.visibility}}
+						</div>
+						<div>
+							<b>Temperature:</b> {{page.divelog.water_temp}}°
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class='col-sm'>
+						<h4>Stops</h4>
+				<ul>
+					{% for stop in page.divelog.stops %}
+						<li>{{stop.depth}}ft for {{stop.time}} mins 
+							{% if stop.gas %}
+								with {{stop.gas}} 
+							{%endif%}
+							{% if stop.reason %}
+								for {{stop.reason}}
+								{%endif%}
+						</li>
+					{% endfor %}
+				</ul>
+					</div>
+					<div class="col-sm">
+						<h4>Team</h4>
+						<ul>
+							{% for member in page.divelog.team %}
+								<li>
+									{{member}}
+								</li>
+							{%endfor%}
+						</ul>
+					</div>
+				</div>
+				
+				
+			</p>
+		</div>
+	</div>
+	{{content}}
+	<hr/>
 </article>
-<hr/>
 
 {% if site.jekyll-archives %}
 {% if page.tags.size > 0 %}

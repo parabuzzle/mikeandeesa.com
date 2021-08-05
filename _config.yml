@@ -75,6 +75,18 @@ descriptions:
   random:
     title: "Random"
     desc: "If it doesn't fit in our other categories, here's where it ends up"
+  
+  divelog:
+    title: "Divelog"
+    desc: "Dive Log entries"
+
+  golf:
+    title: "Golf"
+    desc: "Our adventures golfing"
+
+  vlogs:
+    title: "VLOGs"
+    desc: "Our Weekly VLOGs"
 
 # Social icons and sharing options
 #
